@@ -1,0 +1,182 @@
+:root{
+    --primary-colour: #0A3337;
+    --padding: 5vw;
+}
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 110vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--primary-colour);
+}
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    padding: var(--padding);
+    background: var(--primary-colour);
+}
+ul{
+    list-style: none;
+    z-index: 6;
+}
+
+
+.main{
+    display: block;
+    position: relative;
+    height: 110vh;
+    background-color: #fff;
+    background-size: cover;
+}
+.heroSvgWrapper{
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+.heroSvgWrapper svg{
+    z-index: 10;
+    width: 100%;
+    height: 130%;
+}
+
+.text span.text1 {
+    z-index: 11;
+    position: relative;
+    font-size: 65px;
+    color: #fff;
+    top: 112px;
+    left: 15px;
+}
+
+.heroSvgWrapper .wrapper{
+    display: inline-grid;
+    margin: 10% 0;
+}
+.loader{
+    
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    min-height: 110vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* .l-t,
+.l-b,
+.l-m{
+    flex: 1;
+}
+.l-m{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.m-l,
+.m-r{
+    flex: 1;
+    background: var(--primary-colour);
+} */
+.l-m{
+    z-index: 30;
+}
+.l-t,
+.l-b{
+    float: left;
+    width: 50%;
+    z-index: 28;
+    position: relative;
+    padding: 220px 0;
+    background: var(--primary-colour);
+}
+.l-t{
+    width: 50%;
+    height: 150%;
+}
+.l-b {
+    left: 50%;
+    top: -70%;
+    height: 100%;
+    bottom: 100%;
+    margin: -50% 0;
+}
+
+#zoom-in{
+    width: 100%;
+    height: 110vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50% -50%);
+    overflow: visible;
+    z-index: 9999;
+}
+
+
+.bcg-reveal,
+.bcg-reveal1,
+.bcg-reveal2 {
+    padding: 280px 0;
+    color: #fff;
+    background-color: #0A3337;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.bcg-reveal h1,
+.bcg-reveal1 h1,
+.bcg-reveal2 h1 {
+    font-size: 20px;
+    text-align: center;
+    z-index: 101;
+}
+
+.wedding,
+.baptism,
+.funeral{
+    background: url('../assets/img/reveal.jpg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    top: 0;
+    opacity: 1;
+    z-index: 10000;
+}
+
+.content-wrapper,
+.content-wrapper1,
+.content-wrapper2 {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
+    position: relative;
+    z-index: 10001;
+}
+
+.project {
+    text-align: center;
+    padding: 200px 0;
+    border-bottom: 1px #ebebeb solid;
+}
